@@ -1,0 +1,24 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": [".bmx", ".gradle"],
+			"file_exclude_patterns": ["*.i", "*.sublime-workspace"]
+		}
+	],
+	"build_systems": [
+		{
+			"name": "Gradle: Build muttley.inifilehandler Module",
+			"cmd": ["gradle", "--daemon", "build_module"],
+			"working_dir": "${project_path}/inifilehandler.mod",
+			"shell": "true"
+		},
+		{
+			"name": "Gradle: Run muttley.inifilehandler Module Tests",
+			"cmd": ["gradle", "--daemon", "run_tests"],
+			"working_dir": "${project_path}/inifilehandler.mod",
+			"shell": "true"
+		}
+	]
+}
